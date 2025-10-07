@@ -54,11 +54,11 @@ class PID
 										  
 										  
   //Display functions ****************************************************************
-	double GetKp();						  // These functions query the pid for interal values.
-	double GetKi();						  //  they were created mainly for the pid front-end,
-	double GetKd();						  // where it's important to know what is actually 
-	int GetMode();						  //  inside the PID.
-	int GetDirection();					  //
+	double GetKp() const;		// These functions query the pid for interal values.
+	double GetKi() const;		// they were created mainly for the pid front-end,
+	double GetKd() const;		// where it's important to know what is actually 
+	int GetMode() const;		// inside the PID.
+	int GetDirection() const;	//
 
   private:
 	void Initialize();

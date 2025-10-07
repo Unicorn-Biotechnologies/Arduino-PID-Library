@@ -216,9 +216,8 @@ void PID::SetControllerDirection(int Direction)
  * functions query the internal state of the PID.  they're here for display
  * purposes.  this are the functions the PID Front-end uses for example
  ******************************************************************************/
-double PID::GetKp(){ return  dispKp; }
-double PID::GetKi(){ return  dispKi;}
-double PID::GetKd(){ return  dispKd;}
-int PID::GetMode(){ return  inAuto ? AUTOMATIC : MANUAL;}
-int PID::GetDirection(){ return controllerDirection;}
-
+double PID::GetKp() const { return dispKp; }
+double PID::GetKi() const { return dispKi; }
+double PID::GetKd() const { return dispKd; }
+int PID::GetMode() const { return inAuto ? AUTOMATIC : MANUAL; }
+int PID::GetDirection() const { return controllerDirection; }
