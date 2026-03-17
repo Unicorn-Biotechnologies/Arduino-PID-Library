@@ -9,3 +9,5 @@
    http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
 
  - For function documentation see:  http://playground.arduino.cc/Code/PIDLibrary (Click "Libraries" on the left panel. The link to the documentation is listed as "PIDLibrary - Provides basic feedback control".)
+
+ - Very minor edits made to add const correctness
